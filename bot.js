@@ -30,7 +30,10 @@ if (message.content.startsWith("Hey Diana")) {
         } else
 		if (message.content.includes("love you Diana")) {
 			message.react("👎");
-		}
+		} else
+			if (message.content.includes("love you diana")) {
+				message.react("👎");
+			}
   	      });
 client.on('message', async(message) => {
 if (!message.content.startsWith(prefix)) return;
