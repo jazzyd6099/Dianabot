@@ -13,7 +13,7 @@ client.user.setPresence({ activity: { name: activity.text, type: activity.type }
 });
 client.on('guildMemberAdd', member => {
 	
-	const channel = member.guild.channels.cache.find(channel => channel.name === "diana-bot-test");
+	const channel = member.guild.channels.cache.find(channel => channel.name === "💎welcome💎");
 	if(!channel) return;
 	
 	var embed = new Discord.MessageEmbed()
