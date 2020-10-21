@@ -10,6 +10,17 @@ client.on("ready", () => {
 client.user.setPresence({ activity: { name: activity.text, type: activity.type }, status: 'idle' })
 	   .then(console.log)
   .catch(console.error);
+	
+var x = [
+    1,
+    2,
+    3,
+    4,
+    5,
+]
+
+var output = x[Math.floor(Math.random()*x.length)];
+
 });
 client.on('guildMemberAdd', member => {
 	
