@@ -10,7 +10,7 @@ const comamndFiles = fs.readdirSync('./commands/').filter(file => file.endsWith(
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
 	
-	client.commands.set(command.name, commad)
+	client.commands.set(command.name, command)
 }
 
 client.on("ready", () => {
@@ -61,9 +61,11 @@ if (message.content.startsWith("Hey Diana")) {
   	      });
 client.on('message', async(message) => {
 if (!message.content.startsWith(prefix)) return;
+const args = message.content.slice(prefix.length).split(/ +/);
+const command = args.shift().toLowerCase();
 	
-	if (message.content.startsWith(prefix+"ping")) {
-		message.channel.send("Pong.");
+	if (command === 'ping'){
+		client.commands.get('ping').execute(message, args);
  	 } else
 		 if (message.content.startsWith(prefix+"serverinfo")) {
 			 var embed = new Discord.MessageEmbed()
