@@ -2,6 +2,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { prefix } = require('./config.json');
 const activities = require('./jsons/activity');
+const fs = require('fs');
+
+client.commands = new Discord.Collection();
+
+const comamndFiles = fs.readdirSync('')
 
 client.on("ready", () => {
   console.log("I am ready.");
