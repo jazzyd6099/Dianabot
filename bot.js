@@ -25,9 +25,12 @@ client.on('guildMemberAdd', member => {
 });
 client.on('message', async message => {
   
-if (message.content.toLowerCase().startsWith("Hey Diana")) {
+if (message.content.startsWith("Hey Diana")) {
     message.channel.send("Hello");
-        }
+        } else
+		if (message.content.includes("love you Diana")) {
+			message.react("👎");
+		}
   	      });
 client.on('message', async(message) => {
 if (!message.content.startsWith(prefix)) return;
