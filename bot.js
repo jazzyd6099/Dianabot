@@ -17,7 +17,11 @@ if (message.content.toLowerCase().startsWith("Hey Diana")) {
     message.channel.send("Hello");
         }
   	      });
-   
+client.on('message', async(message) => {
+if (!message.content.startsWith(prefix)) return;
+	
+	if (message.content.startsWith(prefix+"ping")) {
+		message.channel.send("Pong.");
   }
 });
 
