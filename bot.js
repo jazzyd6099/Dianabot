@@ -67,7 +67,7 @@ const command = args.shift().toLowerCase();
 	if (command === 'ping'){
 		client.commands.get('ping').execute(message, args);
  	 } else
-		 if (command === 'serverinfo')) {
+		 if (command === 'serverinfo'){
 			client.commands.get('serverinfo').execute(message, args);
 		 } else
 			 if (message.content.startsWith(prefix+"userinfo")) {
