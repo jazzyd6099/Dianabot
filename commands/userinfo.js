@@ -12,8 +12,7 @@ module.exports = {
 				  .addField("ID", `${user.id}`)
 				  .addField("Status", `${user.presence.status}`)
 				  .addField("In Server", `${message.guild.name}`)
-				  .addField("Joined Discord At", member.user.createdAt)
-				  .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`)
+				  .addField("Joined Discord", member.user.createdAt)
 				  .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
 				  message.channel.send({embed})
   }
