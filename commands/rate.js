@@ -4,8 +4,12 @@ module.exports = {
   name: 'rate',
   description: "Diana rates you.",
   execute(message, args){
-    message.channel.send("Pong.");
-
+   const rate = Math.floor(Math.random() * 100)
+						var embed = new Discord.MessageEmbed()
+						.setColor(0xff790c)
+						.addField(" 1⃣ *Rate* 🔟  ", "I rate you a " + rate + " out of 100.")
+            .setThumbnail(message.author.displayAvatarURL())
+     						message.channel.send({embed})
   }
 }
 
