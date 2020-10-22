@@ -11,6 +11,7 @@ module.exports = {
 	      .addField("Server ID", message.guild.id)
 	      .addField("Owner", message.guild.owner)
 	      .addField("Member Count", `This server has ${message.guild.memberCount} members.`)
+    	      .addField("Channels Count" `This server has ${message.guild.channels.size} channels.`)
 	      .addField("Roles Count", `This server has ${message.guild.roles.cache.size} roles.`)
 	      .addField("Emojis Count", `This Server has ${message.guild.emojis.cache.size} emojis.`)
   	      .addField("You Joined At", message.member.joinedAt)
