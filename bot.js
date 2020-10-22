@@ -70,10 +70,11 @@ const command = args.shift().toLowerCase();
 		 if (command === 'serverinfo'){
 			client.commands.get('serverinfo').execute(message, args);
 		 } else
-			 if (message.content.startsWith(prefix+"userinfo")) {
+			 if (command === 'userinfo'){
 			 client.commands.get('userinfo').execute(message, args);
-				 
-			 }
+			 } else
+				 if (command === 'rate'){
+				 }
 });
 
 client.login(process.env.BOT_TOKEN);
