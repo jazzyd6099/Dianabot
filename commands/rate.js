@@ -1,4 +1,4 @@
-
+const Discord = require("discord.js");
 var output = x[Math.floor(Math.random()*x.length)];
 module.exports = {
   name: 'rate',
