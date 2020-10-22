@@ -74,6 +74,7 @@ const command = args.shift().toLowerCase();
 			 client.commands.get('userinfo').execute(message, args);
 			 } else
 				 if (command === 'rate'){
+				client.commands.get('rate').execute(message, args);
 				 }
 });
 
