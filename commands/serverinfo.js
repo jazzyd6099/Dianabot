@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 module.exports = {
   name: 'serverinfo',
   description: "Gives information about the server you are in.",
