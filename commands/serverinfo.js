@@ -9,7 +9,7 @@ module.exports = {
 	      .setDescription(`${message.guild}'s information`)
 	      .setThumbnail(message.guild.iconURL())
 	      .addField("Server ID", message.guild.id)
-	      .addField("Owner", message.guild.owner.username)
+	      .addField("Owner", message.guild.owner.user.tag)
 	      .addField("Member Count", `This server has ${message.guild.memberCount} members.`)
 	      .addField("Roles Count", `This server has ${message.guild.roles.cache.size} roles.`)
 	      .addField("Emojis Count", `This Server has ${message.guild.emojis.cache.size} emojis.`)
