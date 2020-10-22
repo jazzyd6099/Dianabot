@@ -41,7 +41,7 @@ client.on('guildMemberAdd', member => {
 	.setTitle(`Welcome to ${member.guild}`)
 	.setColor(3447003)
 	.setThumbnail(member.user.displayAvatarURL())
-	.setDescription(`Hello, ${member.user}.\n\nMake sure to go to <#768439249137303573> to introduce yourself and go to <#768440695118626857> for roles of yourself.`)
+	.setDescription(`Hello, ${member.user}.\n\nMake sure to go to <#768439249137303573> to introduce yourself and go to <#768440695118626857> for roles for yourself.`)
 	channel.send({embed})
 });
 client.on('message', async message => {
