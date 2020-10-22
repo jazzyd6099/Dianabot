@@ -13,8 +13,8 @@ module.exports = {
 	      .addField("Member Count", `This server has ${message.guild.memberCount} members.`)
 	      .addField("Roles Count", `This server has ${message.guild.roles.cache.size} roles.`)
 	      .addField("Emojis Count", `This Server has ${message.guild.emojis.cache.size} emojis.`)
-  	      .addField("You Joined at", message.member.joinedAt)
-  	      .setFooter(`Created ${message.guild.createdAt}`);
+  	      .addField("You Joined At", message.member.joinedAt)
+  	      .setFooter(`Server created ${message.guild.createdAt}`);
 				 message.channel.send({embed})
     
   }
