@@ -15,8 +15,8 @@ module.exports = {
    const rate = Math.floor(Math.random() * 100)
 						var embed = new Discord.MessageEmbed()
 						.setColor(3447003)
-						.addField(" 1⃣ *Rate* 🔟  ", "I rate you a " + rate + " out of 100.")
-            .setThumbnail(message.author.displayAvatarURL())
+						.addField(" 1⃣ **Rate** 🔟  ", "I rate you a " + rate + " out of 100.")
+        					  .setThumbnail(message.author.displayAvatarURL())
      						message.channel.send({embed})
   }
 }
