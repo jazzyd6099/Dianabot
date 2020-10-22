@@ -71,17 +71,8 @@ const command = args.shift().toLowerCase();
 			client.commands.get('serverinfo').execute(message, args);
 		 } else
 			 if (message.content.startsWith(prefix+"userinfo")) {
-			  let user = message.mentions.users.first() || message.author;
-				 const member = message.guild.member(user);
-				  var embed = new Discord.MessageEmbed()
-				  .setColor(3447003)
-				  .setDescription(`${user}`)
-				  .setAuthor(`${user.username}#${user.discriminator}`, user.displayAvatarURL())
-				  .addField("ID", `${user.id}`)
-				  .addField("Status", `${user.presence.status}`)
-				  .addField("In Server", `${message.guild.name}`)
-				  .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
-				  message.channel.send({embed})
+			 client.commands.get('userinfo').execute(message, args);
+				 
 			 }
 });
 
