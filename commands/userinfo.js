@@ -3,17 +3,16 @@ module.exports = {
   name: 'userinfo',
   description: "Gives information about a user.",
   execute(message, args){
-    var embed = new Discord.MessageEmbed()
-	      .setColor(3447003)
-	      .setTitle("Server Information")
-	      .setDescription(`${message.guild}'s information`)
-	      .setThumbnail(message.guild.iconURL())
-	      .addField("Server ID", message.guild.id)
-	      .addField("Owner", message.guild.owner.user.tag)
-	      .addField("Member Count", `This server has ${message.guild.memberCount} members.`)
-	      .addField("Roles Count", `This server has ${message.guild.roles.cache.size} roles.`)
-	      .addField("Emojis Count", `This Server has ${message.guild.emojis.cache.size} emojis.`)
-				 message.channel.send({embed})
-    
+			  let user = message.mentions.users.first() || message.author;
+				 const member = message.guild.member(user);
+				  var embed = new Discord.MessageEmbed()
+				  .setColor(3447003)
+				  .setDescription(`${user}`)
+				  .setAuthor(`${user.username}#${user.discriminator}`, user.displayAvatarURL())
+				  .addField("ID", `${user.id}`)
+				  .addField("Status", `${user.presence.status}`)
+				  .addField("In Server", `${message.guild.name}`)
+				  .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
+				  message.channel.send({embed})
   }
 }
