@@ -12,6 +12,7 @@ module.exports = {
 				  .addField("ID", `${user.id}`)
 				  .addField("Status", `${user.presence.status}`)
 				  .addField("In Server", `${message.guild.name}`)
+				  .addField("Joined Discord At", member.user.createdAt)
 				  .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
 				  message.channel.send({embed})
   }
