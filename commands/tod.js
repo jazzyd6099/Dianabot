@@ -31,8 +31,7 @@ module.exports = {
 		.setTitle('Truth or Dare')
 		.setDescription('React to the specified emoji to either do a truth or dare. \n\n💬 : `Truth` \n\n🗨️ : `Dare`')
    		  let messageEmbed = await message.channel.send({embed})
-     			messageEmbed.react('💬')
-	  		messageEmbed.react('🗨️')
+		messageEmbed.react('💬').then(() => messageEmbed.react('🗨️'));
 	  const filter = (reaction, user) => {
 			return ['💬', '🗨️'].includes(reaction.emoji.name) && user.id === message.author.id;
 		};
