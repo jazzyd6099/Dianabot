@@ -1,5 +1,26 @@
 const Discord = require("discord.js");
-const truths = require('../jsons/truths');
+var x = [
+    1,
+    2,
+    3,
+    4,
+    5,
+]
+
+var output = x[Math.floor(Math.random()*x.length)];
+
+var truths = [
+    "What’s the last lie you told?",
+    "What’s your most bizarre nickname?",
+    "If you met a genie, what would your three wishes be?",
+    "What’s the meanest thing you’ve ever said to someone else?",
+    "What’s one thing you’d do if you knew there no consequences?",
+    "What’s something you love to do with your friends that you’d never do in front of your partner?",
+    "Who are you most jealous of?",
+    "Where are you ticklish?",
+    "What app do you waste the most time on?",
+];
+
 
 module.exports = {
   name: 'tod',
