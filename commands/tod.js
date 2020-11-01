@@ -1,4 +1,6 @@
 const Discord = require("discord.js");
+const truths = require('./jsons/truths');
+const dares = require('./jsons/dares');
 
 module.exports = {
   name: 'tod',
