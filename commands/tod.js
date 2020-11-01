@@ -31,15 +31,15 @@ module.exports = {
 		.setTitle('Truth or Dare')
 		.setDescription('React to the specified emoji to either do a truth or dare. \n\n💬 : `Truth` \n\n🗨️ : `Dare`')
    		  let messageEmbed = await message.channel.send({embed})
-		messageEmbed.react('💬').then(() => messageEmbed.react('🗨️'));
+		messageEmbed.react('👉').then(() => messageEmbed.react('👈'));
 	  const filter = (reaction, user) => {
-			return ['💬', '🗨️'].includes(reaction.emoji.name) && user.id === message.author.id;
+			return ['👉', '👈'].includes(reaction.emoji.name) && user.id === message.author.id;
 		};
 			message.awaitReactions(filter, { maxMatches: 1, time: 3000, errors: ['time'] })
 			.then(collected => {
 				const reaction = collected.first();
 			
-				 if (reaction.emoji.name === '💬') {
+				 if (reaction.emoji.name === '👉') {
             			 message.reply('You picked truth.');
 				 }
 				  else {
