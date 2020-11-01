@@ -12,20 +12,5 @@ module.exports = {
    		  let messageEmbed = await message.channel.send({embed})
      			messageEmbed.react('💬')
 	  		messageEmbed.react('🗨️')
-	   const filter = (reaction, user) => {
-        return ["💬", "🗨️"].includes(reaction.emoji.name) && user.id === message.author.id
-	   };
-	  messageEmbed
-        .awaitReactions(filter, { max: 1, time: 30000, errors: ["time"] })
-        .then(collected => {
-          const reaction = collected.first();
-	  
-          if (reaction.emoji.name === "💬") {
-		  var embed2 = new Discord.MessageEmbed()
-		 .setColor(3447003)
-		 .setTitle('Truth')
-		 .setDescription(truths[Math.floor(Math.random() * truths.length)])
-		  message.channel.send({embed2})
-	  }
-  });
+  }
 }
