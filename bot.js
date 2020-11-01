@@ -75,7 +75,7 @@ const command = args.shift().toLowerCase();
 			 } else
 				 if (command === 'rate'){
 				client.commands.get('rate').execute(message, args);
-				 }
+				 } 
 });
 
 client.login(process.env.BOT_TOKEN);
