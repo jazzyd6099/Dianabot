@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const truths = require("./jsons/truths");
 
 module.exports = {
   name: 'tod',
@@ -24,5 +25,6 @@ module.exports = {
 					 .setTitle('Truth')
 					 .setDescription(truths[Math.floor(Math.random() * truths.length)])
 					 message.channel.send({embed2})
+				})
   }
 }
