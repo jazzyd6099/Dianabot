@@ -10,5 +10,6 @@ module.exports = {
 		.setDescription('Decide on if you want to do a truth or dare. \nReact to the specified emoji to either do a truth or dare. \n\n💬 : `Truth` \n\n🗨️ : `Dare`')
    		  let messageEmbed = await message.channel.send({embed})
      			messageEmbed.react('💬')
+	  		messageEmbed.react('🗨️')
   }
 }
