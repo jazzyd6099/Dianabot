@@ -40,13 +40,9 @@ module.exports = {
 			.then(collected => {
 				const reaction = collected.first();
 			
-				if (reaction.emoji.name === "💬") {
-					 var embed = new Discord.MessageEmbed()
-					 .setColor(3447003)
-					 .setTitle('Truth')
-					 .setDescription(truths[Math.floor(Math.random() * truths.length)])
-					 message.channel.send({embed})
-				}
-			});
+				 if (reaction.emoji.name === '💬') {
+            			message.reply('test');
+				 }
+			}
   }
 }
