@@ -54,6 +54,6 @@ module.exports = {
     })
     .catch((collected) => {
      message.reply('No response given.');
-	  }
+	  })
   }
 }
