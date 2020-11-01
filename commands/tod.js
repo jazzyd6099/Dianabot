@@ -41,12 +41,15 @@ module.exports = {
 				const reaction = collected.first();
 			
 				 if (reaction.emoji.name === '💬') {
-            			message.reply('test');
+            			 message.reply('You picked truth.');
 				 }
+				  else {
+         			   message.reply('You picked dare.');
+      			  }
 			})
 	  .catch(collected => {
         console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        message.reply('you didnt react.');
+        message.reply('Test.');
     });
   }
 }
