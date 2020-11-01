@@ -72,7 +72,7 @@ module.exports = {
  	    }
     })
     .catch((collected) => {
-     message.reply('No response given.');
+     message.reply("You don't want to play Truth or Dare?");
 	  })
   }
 }
