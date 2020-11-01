@@ -30,7 +30,23 @@ var x = [
 ]
 
 var output = x[Math.floor(Math.random()*x.length)];
+	
+	client.on('warn', err => console.warn('[WARNING]', err));
 
+client.on('error', err => console.error('[ERROR]', err));
+
+client.on('uncaughtException', (err) => {
+    console.log("Uncaught Exception: " + err)
+    process.exit(1)
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.log('[FATAL] Possibly Unhandled Rejection at: Promise ', promise, ' reason: ', reason.message);
+	});
+
+client.on('disconnect', () => {
+  console.warn('Disconnected!')
+  process.exit(0);
 });
 client.on('guildMemberAdd', member => {
 	
