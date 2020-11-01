@@ -4,6 +4,7 @@ module.exports = {
   name: 'tod',
   description: "Truth or Dare.",
   execute(message, args){
+	  async () => {
     var embed = new Discord.MessageEmbed()
 		.setColor(3447003)
 		.setTitle('Truth or Dare')
