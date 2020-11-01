@@ -8,6 +8,8 @@ var x = [
     5,
 ]
 
+var output = x[Math.floor(Math.random()*x.length)];
+
 var fortunes = [
     "Yes.",
     "It is certain.",
@@ -31,15 +33,13 @@ var fortunes = [
     "Very doubtful.",
 ];
 
-var output = x[Math.floor(Math.random()*x.length)];
-
-const fortune = fortunes[Math.floor(Math.random() * fortunes.length)]
 
 
 module.exports = {
   name: '8ball',
   description: "Ask the 8ball a question.",
   execute(message, args){
+	  const fortune = fortunes[Math.floor(Math.random() * fortunes.length)]
     						let question = args.slice(0).join(' ')
 if (!question) return message.reply("You need to provide a question for the 8ball.");
     
