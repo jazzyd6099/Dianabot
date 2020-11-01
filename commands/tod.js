@@ -48,7 +48,7 @@ module.exports = {
 			})
 	  .catch(collected => {
         console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        message.reply('Test.');
+        message.reply('Nah.');
     });
   }
 }
