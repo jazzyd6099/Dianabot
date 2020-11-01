@@ -81,6 +81,8 @@ const command = args.shift().toLowerCase();
 					 } else
 					if (command === 'tod'){
 						client.commands.get('tod').execute(message, args);
+						   let messageEmbed = await message.channel.send({embed})
+          						messageEmbed.react('💬')
 					}
 });
 
