@@ -60,7 +60,8 @@ module.exports = {
 			 .setDescription(truths[Math.floor(Math.random() * truths.length)])
 				 message.channel.send({embed})			
 	   }				  
-	  else {         			   
+	  else 
+	  if (reaction.emoji.name === '🗨️') {         			   
 		  var embed = new Discord.MessageEmbed()
 		  .setColor(16254757)
 		  .setDescription(dares[Math.floor(Math.random() * dares.length)])
