@@ -26,6 +26,6 @@ module.exports = {
 		 .setTitle('Truth')
 		 .setDescription(truths[Math.floor(Math.random() * truths.length)])
 		  message.channel.send({embed})
-	  };
+	  }
   });
 }
