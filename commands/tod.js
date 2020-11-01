@@ -65,7 +65,7 @@ module.exports = {
 		  var embed = new Discord.MessageEmbed()
 		  .setColor(16254757)
 		  .setTitle('A Dare For You')
-		  .setThumbnail('https://cdn.shopify.com/s/files/1/1061/1924/products/Devil_Emoji_Icon_7590c90c-e509-4534-bb4f-056c2c68c9e4_grande.png?v=1571606089')
+		  .setThumbnail('https://cdn.shopify.com/s/files/1/1061/1924/products/34_large.png?v=1571606117')
 		  .setDescription(dares[Math.floor(Math.random() * dares.length)])
 		  message.channel.send({embed})
 		   return;
