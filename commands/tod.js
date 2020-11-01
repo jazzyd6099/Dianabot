@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const truths = require("./jsons/truths.json");
+const truths = require('../jsons/truths');
 
 module.exports = {
   name: 'tod',
