@@ -36,7 +36,7 @@ module.exports = {
 	  const filter = (reaction, user) => {
 			return ['💬', '🗨️'].includes(reaction.emoji.name) && user.id === message.author.id;
 		};
-			message.awaitReactions(filter, { maxMatches: 1, time: 30000, errors: ['time'] })
+			message.awaitReactions(filter, { maxMatches: 1, time: 3000, errors: ['time'] })
 			.then(collected => {
 				const reaction = collected.first();
 				
