@@ -27,6 +27,6 @@ module.exports = {
 		 .setDescription(truths[Math.floor(Math.random() * truths.length)])
 		  message.channel.send({embed})
 	  }
-
+)
   }
 }
