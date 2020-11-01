@@ -78,7 +78,10 @@ const command = args.shift().toLowerCase();
 				 } else
 				 if (command === '8ball'){
 				client.commands.get('8ball').execute(message, args);
-					 }
+					 } else
+					if (command === 'tod'){
+						client.commands.get('tod').execute(message, args);
+					}
 });
 
 client.login(process.env.BOT_TOKEN);
