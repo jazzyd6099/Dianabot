@@ -19,6 +19,15 @@ var truths = [
     "Who are you most jealous of?",
     "Where are you ticklish?",
     "What app do you waste the most time on?",
+    "What is one secret you are hiding from your mom?",
+    "Have you ever stalked someone on Facebook or Instagram?",
+    "Do you currently have a crush on anyone?",
+    "Is there anything in your life that you would change?",
+    "Who do you hate and why?",
+    "How many people have you kissed?",
+    "What is your guilty pleasure?",
+    "What is your go-to song to sing in the shower?",
+    "If you suddenly became invisible what would you do?",
 ];
 
 var dares = [
@@ -27,6 +36,13 @@ var dares = [
   "Do 10 pushups.",
   "Lick the wall.",
   "Try to lick your elbow.",
+  "Send a video of you dancing.",
+  "Talk about your last dream.",
+  "Try eating a snack without using your hands.",
+  "Text a friend and tell them their hair is on backwards.",
+  "Send me link of the last YouTube video you watched.",
+  "Send your favorite TikTok/YouTube video.",
+  "Send the 11th picture in your photo gallery.",
 ];
 
 
