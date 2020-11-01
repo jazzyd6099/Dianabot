@@ -14,12 +14,15 @@ module.exports = {
 	  const filter = (reaction, user) => {
 			return ['💬', '🗨️'].includes(reaction.emoji.name) && user.id === message.author.id;
 		};
-			message.awaitReactions(filter, { maxMatches: 1, time: 60000, errors: ['time'] })
+			message.awaitReactions(filter, { maxMatches: 1, time: 30000, errors: ['time'] })
 			.then(collected => {
 				const reaction = collected.first();
-			})
-			      .catch(collected => {
-				message.channel.send(`After a minute, only ${collected.size} out of 4 reacted.`);
-				 });
+				
+				if (reaction.emoji.name === "💬") {
+					 var embed2 = new Discord.MessageEmbed()
+					 .setColor(3447003)
+					 .setTitle('Truth')
+					 .setDescription(truths[Math.floor(Math.random() * truths.length)])
+					 message.channel.send({embed2})
   }
 }
