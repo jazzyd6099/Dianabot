@@ -21,6 +21,14 @@ var truths = [
     "What app do you waste the most time on?",
 ];
 
+var dares = [
+  "Make out with your hand.",
+  "Make your Discord status 'How do you spell 'Discord'?'",
+  "Do 10 pushups.",
+  "Lick the wall.",
+  "Try to lick your elbow.",
+];
+
 
 module.exports = {
   name: 'tod',
@@ -46,13 +54,17 @@ module.exports = {
 		  
 	   if (reaction.emoji.name === '💬') {            	
 		    var embed = new Discord.MessageEmbed()
-				 .setColor(3447003)
+				 .setColor(16114719)
 				 .setTitle('Truth')
+		    		.setThumbnail('https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Thinking_grande.png?v=1571606093')
 			 .setDescription(truths[Math.floor(Math.random() * truths.length)])
 				 message.channel.send({embed})			
 	   }				  
 	  else {         			   
-		  message.reply('You picked dare.');
+		  var embed = new Discord.MessageEmbed()
+		  .setColor(16254757)
+		  .setDescription(dares[Math.floor(Math.random() * dares.length)])
+		  message.channel.send({embed})
 		   return;
  	    }
     })
