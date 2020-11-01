@@ -43,6 +43,6 @@ module.exports = {
 				 if (reaction.emoji.name === '💬') {
             			message.reply('test');
 				 }
-			}
+			})
   }
 }
