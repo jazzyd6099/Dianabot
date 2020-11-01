@@ -45,7 +45,11 @@ module.exports = {
    	  const reaction = collected.first();
 		  
 	   if (reaction.emoji.name === '💬') {            	
-		   message.reply('You picked truth.');				
+		    var embed = new Discord.MessageEmbed()
+				 .setColor(3447003)
+				 .setTitle('Truth')
+			 .setDescription(truths[Math.floor(Math.random() * truths.length)])
+				 message.channel.send({embed})			
 	   }				  
 	  else {         			   
 		  message.reply('You picked dare.');
