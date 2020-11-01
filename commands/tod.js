@@ -32,23 +32,8 @@ module.exports = {
 		.setDescription('React to the specified emoji to either do a truth or dare. \n\n💬 : `Truth` \n\n🗨️ : `Dare`')
    		  let messageEmbed = await message.channel.send({embed})
 		messageEmbed.react('👉').then(() => messageEmbed.react('👈'));
-	  const filter = (reaction, user) => {
-			return ['👉', '👈'].includes(reaction.emoji.name) && user.id === message.author.id;
-		};
-			message.awaitReactions(filter, { maxMatches: 1, time: 3000, errors: ['time'] })
-			.then(collected => {
-				const reaction = collected.first();
-			
-				 if (reaction.emoji.name === '👉') {
-            			 message.reply('You picked truth.');
-				 }
-				  else {
-         			   message.reply('You picked dare.');
-      			  }
-			})
-	  .catch(collected => {
-        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        message.reply('Nah.');
-    });
+	const filter = reaction => reaction.emoji.name === '👉';
+  message.awaitReactions(filter, { time: 15000 }).
+    then(collected => collected.map(s => message.channel.send(`Collected ${s.count}`)));
   }
 }
