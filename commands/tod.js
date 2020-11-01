@@ -11,5 +11,15 @@ module.exports = {
    		  let messageEmbed = await message.channel.send({embed})
      			messageEmbed.react('💬')
 	  		messageEmbed.react('🗨️')
+	  const filter = (reaction, user) => {
+			return ['💬', '🗨️'].includes(reaction.emoji.name) && user.id === message.author.id;
+		};
+			message.awaitReactions(filter, { maxMatches: 1, time: 60000, errors: ['time'] })
+			.then(collected => {
+				const reaction = collected.first();
+			}}
+			      .catch(collected => {
+				message.channel.send(`After a minute, only ${collected.size} out of 4 reacted.`);
+				 });
   }
 }
