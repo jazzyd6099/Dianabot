@@ -43,6 +43,12 @@ var dares = [
   "Send me link of the last YouTube video you watched.",
   "Send your favorite TikTok/YouTube video.",
   "Send the 11th picture in your photo gallery.",
+  "Text the first word that comes to mind.",
+  "Howl like a dog for one minute.",
+  "Eat a spoonful of ketchup.",
+  "Using your elbows only, type out a Discord status and post it.",
+  "Screenshot your browser history and send it here.",
+  "Text someone random a bad joke.",
 ];
 
 
