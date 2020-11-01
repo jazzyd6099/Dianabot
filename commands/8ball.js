@@ -1,5 +1,13 @@
 const Discord = require("discord.js");
 
+var x = [
+    1,
+    2,
+    3,
+    4,
+    5,
+]
+
 var fortunes = [
     "Yes.",
     "It is certain.",
