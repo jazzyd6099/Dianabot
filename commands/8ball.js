@@ -32,6 +32,7 @@ var fortunes = [
 ];
 
 var output = x[Math.floor(Math.random()*x.length)];
+
 const fortune = fortunes[Math.floor(Math.random() * fortunes.length)]
 
 
