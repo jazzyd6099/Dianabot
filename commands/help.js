@@ -9,7 +9,7 @@ module.exports = {
 					.setDescription("There will be more to come. If you have any suggestions, please put them in <#768471194424442891>.")
 					.setThumbnail('https://imgur.com/a/Ku4ivqo')
 					.addField('__Fun__', '`d/tod`, `d/8ball`, `d/coinflip`, `d/rate`')
-					.addField('__Information__', '`d/serverinfo`,`d/userinfo`')
+					.addField('__Information__', '`d/serverinfo`, `d/userinfo`')
 					.addField('__Other__', '`WIP.`')
 					.setFooter('Bot coded and created by SpaceCarame#6433.')
 					message.channel.send({embed})
