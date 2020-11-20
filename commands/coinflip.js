@@ -17,7 +17,7 @@ module.exports = {
 	  const coinflip = ['Heads.','Tails.'];
     var embed = new Discord.MessageEmbed()
 	      .setColor(3447003)
-	      .setTitle("Coinflip \n\nWhat will it land on?")
+	      .setTitle("Coinflip \nWhat will it land on?")
     	      .setThumbnail('https://i.ibb.co/0BsCZnB/free-heads-or-tails-icon-456-thumb.png')
 	      .setDescription(coinflip[Math.floor(Math.random () * coinflip.length)])
     	      message.channel.send({embed})
