@@ -14,7 +14,7 @@ module.exports = {
   description: "Heads or Tails.",
   execute(message, args){
 	  var output = x[Math.floor(Math.random()*x.length)];
-	  var coinflip = ['Heads.','Tails.'];
+	  const coinflip = ['Heads.','Tails.'];
     var embed = new Discord.MessageEmbed()
 	      .setColor(3447003)
 	      .setTitle("Coinflip \nWhat will it land on?")
