@@ -81,6 +81,9 @@ const command = args.shift().toLowerCase();
 					 } else
 					if (command === 'tod'){
 						client.commands.get('tod').execute(message, args);
+					}else 
+						if (command === 'help'){
+							client.commands.get('help').execute(message, args);
 					}
 });
 
