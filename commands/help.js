@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-
 module.exports = {
   name: 'help',
   description: "To help and tell you what Diana's commands are.",
