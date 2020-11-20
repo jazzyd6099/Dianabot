@@ -33,8 +33,9 @@ var output = x[Math.floor(Math.random()*x.length)];
 	
 });
 client.on('guildMemberAdd', member => {
-	
-	const channel = member.guild.channels.cache.find(channel => channel.name.includes('💎welcome💎'));
+	const channelId = '768439197165158401'
+
+	const channel = member.guild.channels.cache.get(channelId)
 	if(!channel) return;
 	
 	var embed = new Discord.MessageEmbed()
