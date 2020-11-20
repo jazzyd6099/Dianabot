@@ -15,7 +15,6 @@ module.exports = {
   name: 'coinflip',
   description: "Heads or Tails.",
   execute(message, args){
-
     var embed = new Discord.MessageEmbed()
 	      .setColor(3447003)
 	      .setTitle("Coinflip")
