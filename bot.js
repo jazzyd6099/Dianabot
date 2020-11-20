@@ -60,7 +60,7 @@ if (message.content.startsWith("Hey Diana")) {
 				}
   	      });
 client.on('message', async(message) => {
-if (!message.content.startsWith(prefix)) return;
+if(!message.content.toLowerCase().startsWith(client.config.prefix)) return;
 const args = message.content.slice(prefix.length).split(/ +/);
 const command = args.shift().toLowerCase();
 	
