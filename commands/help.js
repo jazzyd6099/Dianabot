@@ -7,7 +7,7 @@ module.exports = {
 					.setTitle("My Commands")
 					.setColor(3447003)
 					.setDescription("There will be more to come. If you have any suggestions, please put them in <#768471194424442891>.")
-					.setThumbnail('https://imgur.com/a/z8FKk4W')
+					.setThumbnail('https://ibb.co/HpKDJ54')
 					.addField('__Fun__', '`d/tod`, `d/8ball`, `d/coinflip`, `d/rate`')
 					.addField('__Information__', '`d/serverinfo`, `d/userinfo`')
 					.addField('__Other__', '`WIP.`')
