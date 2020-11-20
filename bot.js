@@ -32,7 +32,7 @@ var x = [
 var output = x[Math.floor(Math.random()*x.length)];
 	
 });
-client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', (member) => {
 	
   const channel = member.guild.channels.cache.find(channel => channel.name.includes('💎welcome💎'));
     if (!channel) return;
